@@ -1,0 +1,60 @@
+type Product {
+    id: ID!
+    productName: String!
+    price: Float!
+    productQuantity: Int!
+}
+
+type User {
+    userId: ID!
+    userName: String!
+    email: String!
+    phone: String
+    password: String
+    orders: [Order]
+}
+
+type Order {
+    orderId: ID!
+    orderDetails: String!
+    address: String!
+    price: Int!
+    user: User
+}
+
+input UserDTO {
+    userName: String!
+    email: String!
+    phone: String
+    password: String
+
+}
+
+type Student {
+    id: ID!
+    name: String!
+    email: String!
+    phone: String
+    password: String
+    address: String
+}
+
+type Query {
+    getProductById(id: Int!): Product
+    getAllProducts: [Product!]!
+    getUserById(userId: Int!): User
+    getAllUsers: [User!]!
+    getAllStudents: [Student!]!
+    getAllUserInDescendingOrder: [User!]!
+    findByUserNameContaining(userName: String!): [User!]!
+}
+
+type Mutation {
+    updateProductQuantity(id: Int!, productQuantity: Int!): Product
+    createUser(userName: String!, email: String!, phone: String, password: String): User
+    updateUser(userId: Int!, userName: String, email: String, phone: String, password: String): User
+    deleteUserById(userId: Int!): String
+    createUserByDTO(userDTO: UserDTO!): User
+    existByUserName(userName: String!): Boolean
+
+}
