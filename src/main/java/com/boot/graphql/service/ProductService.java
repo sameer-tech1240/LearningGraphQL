@@ -32,6 +32,15 @@ public class ProductService implements IProductService {
         return productRepository.save(productUpdate);
     }
 
+    @Override
+    public Product updateProductQuantityShipment(int id, int stock) {
+        Product product = productRepository.findById(id).orElseThrow(() -> new RuntimeException("Resource not found" + id));
+        int productQuantity = product.getProductQuantity();
+        int addQuantity = productQuantity + stock;
+        product.setProductQuantity(addQuantity);
+        return productRepository.save(product);
+    }
+
 
 }
 

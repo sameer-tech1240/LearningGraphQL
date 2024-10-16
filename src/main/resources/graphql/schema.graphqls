@@ -52,9 +52,10 @@ type Query {
 type Mutation {
     updateProductQuantity(id: Int!, productQuantity: Int!): Product
     createUser(userName: String!, email: String!, phone: String, password: String): User
-    updateUser(userId: Int!, userName: String, email: String, phone: String, password: String): User
+    updateUser(userId: Int!, userName: String, email: String): User
     deleteUserById(userId: Int!): String
     createUserByDTO(userDTO: UserDTO!): User
     existByUserName(userName: String!): Boolean
+    updateProductQuantityShipment(id: Int!, stock: Int!): Product
 
 }

@@ -10,4 +10,6 @@ public interface IProductService {
     List<Product> getAllProducts();
 
     Product updateProduct(int id , int productQuantity);
+
+    Product updateProductQuantityShipment(int id, int productQuantity);
 }

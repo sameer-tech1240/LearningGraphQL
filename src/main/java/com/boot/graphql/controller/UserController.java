@@ -32,16 +32,11 @@ public class UserController {
     }
 
     @MutationMapping
-    public User updateUser(@Argument int userId, @Argument String userName, @Argument String email, @Argument String phone, @Argument String password) {
-        User user = new User();
-        user.setUserId(userId);
-        user.setUserName(userName);
-        user.setEmail(email);
-        user.setPhone(phone);
-        user.setPassword(password);
-        log.info("Update user : {}", user);
-        return userService.updateUser(user);
+    public User updateUser(@Argument int userId, @Argument String userName, @Argument String email) {
+        log.info("Update request - userId: {}, userName: {}, email: {}", userId, userName, email);
+        return userService.updateUser(userId, userName, email);
     }
+
 
     @QueryMapping
     public User getUserById(@Argument int userId) {

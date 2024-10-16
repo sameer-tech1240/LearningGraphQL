@@ -39,4 +39,12 @@ public class ProductController {
         return product;
     }
 
+
+    @MutationMapping
+    public Product updateProductQuantityShipment(@Argument int id, @Argument int stock) {
+        Product product = productService.updateProductQuantityShipment(id, stock);
+        log.info("Update product stock shipment from db : {}", product);
+        return product;
+    }
+
 }

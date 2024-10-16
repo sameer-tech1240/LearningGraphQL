@@ -27,15 +27,20 @@ public class UserService implements IUserService {
     }
 
     @Override
-    public User updateUser(User user) {
-        User userNotFound = userRepository.findById(user.getUserId()).orElseThrow(() -> new RuntimeException("User not found with id : " + user.getUserId()));
-        userNotFound.setUserName(user.getUserName());
-        userNotFound.setEmail(user.getEmail());
-        userNotFound.setPhone(user.getPhone());
-        userNotFound.setPassword(user.getPassword());
-        return userRepository.save(userNotFound);
+    public User updateUser(int userId, String userName, String email) {
+        User user = userRepository.findById(userId)
+                .orElseThrow(() -> new RuntimeException("User not found with id: " + userId));
 
+        if (userName != null && !userName.isEmpty()) {
+            user.setUserName(userName);
+        }
+        if (email != null && !email.isEmpty()) {
+            user.setEmail(email);
+        }
+
+        return userRepository.save(user);
     }
+
 
     @Override
     public User getUserById(int userId) {
