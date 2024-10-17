@@ -47,6 +47,7 @@ type Query {
     getAllStudents: [Student!]!
     getAllUserInDescendingOrder: [User!]!
     findByUserNameContaining(userName: String!): [User!]!
+    allUserPDFGenerator: String!
 }
 
 type Mutation {

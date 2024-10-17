@@ -9,7 +9,7 @@ import java.util.List;
 public interface IUserService {
     User createUser(User user);
 
-    User updateUser(int userId, String userName, String email );
+    User updateUser(int userId, String userName, String email);
 
     User getUserById(int userId);
 
@@ -22,6 +22,8 @@ public interface IUserService {
     String deleteUserById(int id);
 
     List<User> getAllUserInDescendingOrder();
+
+    String allUserPDFGenerator();
 
 
 }

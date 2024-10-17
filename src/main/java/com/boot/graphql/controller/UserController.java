@@ -3,7 +3,6 @@ package com.boot.graphql.controller;
 import com.boot.graphql.dtos.UserDTO;
 import com.boot.graphql.entity.User;
 import com.boot.graphql.service.IUserService;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.graphql.data.method.annotation.Argument;
@@ -84,6 +83,12 @@ public class UserController {
     public List<User> findByUserNameContaining(@Argument String userName) {
         log.info("Fetching users by userName containing: {}", userName);
         return userService.findByUserNameContaining(userName);
+    }
+
+    @QueryMapping
+    String allUserPDFGenerator() {
+        log.info("Generating PDF for all users");
+        return userService.allUserPDFGenerator();
     }
 
 }
