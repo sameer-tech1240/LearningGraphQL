@@ -1,5 +1,6 @@
 package com.boot.graphql.controller;
 
+import com.boot.graphql.dtos.ProductDto;
 import com.boot.graphql.entity.Product;
 import com.boot.graphql.service.IProductService;
 import lombok.extern.log4j.Log4j2;
@@ -17,6 +18,13 @@ public class ProductController {
 
     @Autowired
     private IProductService productService;
+
+    @MutationMapping
+    public Product createProduct(@Argument ProductDto productDto) {
+
+        return productService.createProduct(productDto);
+    }
+
 
     @QueryMapping
     public Product getProductById(@Argument int id) {
@@ -46,5 +54,15 @@ public class ProductController {
         log.info("Update product stock shipment from db : {}", product);
         return product;
     }
+
+
+
+   /* @QueryMapping
+    public List<Product> getProductByPriceBetween(float minPrice, float maxPrice) {
+        List<Product> productByPriceBetween = productService.getProductByProductPrice(minPrice, maxPrice);
+        log.info("Fetch product by price between from db : {}", productByPriceBetween);
+        return productByPriceBetween;
+    }*/
+
 
 }

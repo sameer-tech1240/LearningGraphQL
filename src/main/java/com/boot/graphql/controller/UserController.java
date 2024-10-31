@@ -89,6 +89,8 @@ public class UserController {
     String allUserPDFGenerator() {
         log.info("Generating PDF for all users");
         return userService.allUserPDFGenerator();
+
     }
+
 
 }

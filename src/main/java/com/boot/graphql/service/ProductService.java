@@ -1,8 +1,10 @@
 package com.boot.graphql.service;
 
 
+import com.boot.graphql.dtos.ProductDto;
 import com.boot.graphql.entity.Product;
 import com.boot.graphql.repo.ProductRepository;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +15,9 @@ public class ProductService implements IProductService {
 
     @Autowired
     private ProductRepository productRepository;
+
+    @Autowired
+    private ObjectMapper mapper;
 
     @Override
     public Product getProductById(int id) {
@@ -41,6 +46,24 @@ public class ProductService implements IProductService {
         return productRepository.save(product);
     }
 
+    @Override
+    public Product createProduct(ProductDto productDto) {
+        Product product = new Product();
+
+        product.setProductName(productDto.getProductName());
+        product.setPrice(productDto.getPrice());
+        product.setProductQuantity(productDto.getProductQuantity());
+
+        return productRepository.save(product);
+    }
+
+
+
+    /*@Override
+    public List<Product> getProductByProductPrice(float minPrice , float maxPrice) {
+        return productRepository.getProductByPriceBetween(minPrice , maxPrice);
+    }
+*/
 
 }
 

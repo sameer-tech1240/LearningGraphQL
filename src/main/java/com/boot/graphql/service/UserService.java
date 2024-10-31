@@ -12,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 
@@ -102,11 +101,9 @@ public class UserService implements IUserService {
     @Override
     public String allUserPDFGenerator() {
         List<User> users = userRepository.findAll();
-
         if (users.isEmpty()) {
             throw new RuntimeException("No users found to generate report.");
         }
-
         try {
             PdfWriter writer = new PdfWriter(pdfPath);
             PdfDocument pdfDocument = new PdfDocument(writer);
@@ -135,6 +132,7 @@ public class UserService implements IUserService {
             throw new RuntimeException("Error generating PDF", e);
         }
     }
+
 
     private String maskPasswordForGeneratePDF(String password) {
         if (password == null || password.length() <= 4) {

@@ -30,6 +30,12 @@ input UserDTO {
 
 }
 
+input ProductDTO {
+
+    productName:String,
+    price:Float,
+    productQuantity:Int
+}
 type Student {
     id: ID!
     name: String!
@@ -42,21 +48,32 @@ type Student {
 type Query {
     getProductById(id: Int!): Product
     getAllProducts: [Product!]!
+
+
     getUserById(userId: Int!): User
     getAllUsers: [User!]!
-    getAllStudents: [Student!]!
     getAllUserInDescendingOrder: [User!]!
     findByUserNameContaining(userName: String!): [User!]!
     allUserPDFGenerator: String!
+
+    getAllStudents: [Student!]!
+
+
+
+    #    getProductByPriceBetween(minPrice: Float , maxPrice: Float): [Product]
+
 }
 
 type Mutation {
     updateProductQuantity(id: Int!, productQuantity: Int!): Product
+    updateProductQuantityShipment(id: Int!, stock: Int!): Product
+    createProduct(productDto:ProductDTO):Product
+
+
     createUser(userName: String!, email: String!, phone: String, password: String): User
     updateUser(userId: Int!, userName: String, email: String): User
     deleteUserById(userId: Int!): String
     createUserByDTO(userDTO: UserDTO!): User
     existByUserName(userName: String!): Boolean
-    updateProductQuantityShipment(id: Int!, stock: Int!): Product
-
 }
+
