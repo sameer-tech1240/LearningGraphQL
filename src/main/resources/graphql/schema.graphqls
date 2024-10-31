@@ -68,7 +68,7 @@ type Mutation {
     updateProductQuantity(id: Int!, productQuantity: Int!): Product
     updateProductQuantityShipment(id: Int!, stock: Int!): Product
     createProduct(productDto:ProductDTO):Product
-
+    deleteProduct(id : Int!): String
 
     createUser(userName: String!, email: String!, phone: String, password: String): User
     updateUser(userId: Int!, userName: String, email: String): User

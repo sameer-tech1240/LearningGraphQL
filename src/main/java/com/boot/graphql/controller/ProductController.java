@@ -55,6 +55,14 @@ public class ProductController {
         return product;
     }
 
+    @MutationMapping
+    public String deleteProduct(@Argument int id) {
+        String deleteProduct = productService.deleteProduct(id);
+        log.info("Delete product from db : {}", deleteProduct);
+        return deleteProduct;
+    }
+
+
 
 
    /* @QueryMapping

@@ -16,6 +16,8 @@ public interface IProductService {
 
     Product createProduct(ProductDto productDto);
 
+    String deleteProduct(int id);
+
 
     /*List<Product> getProductByProductPrice(float minPrice , float maxPrice);*/
 }

@@ -281,3 +281,145 @@
 2024-10-31 10:11:51,326 :  : INFO   : HikariDataSource.java:349 : HikariPool-15 - Shutdown initiated...
 2024-10-31 10:11:51,379 :  : INFO   : HikariDataSource.java:351 : HikariPool-15 - Shutdown completed.
 2024-10-31 10:11:51,379 :  : INFO   : DirectJDKLog.java:173 : Stopping service [Tomcat]
+2024-10-31 10:14:58,559 :  : INFO   : StartupInfoLogger.java:50 : Starting CrudWithGraphQlApplication using Java 22.0.2 with PID 2872 (D:\SpringBoot\Spring Boot GraphQL\CrudWithGraphQL\target\classes started by admin in D:\SpringBoot\Spring Boot GraphQL\CrudWithGraphQL)
+2024-10-31 10:14:58,595 :  : INFO   : SpringApplication.java:654 : No active profile set, falling back to 1 default profile: "default"
+2024-10-31 10:15:02,083 :  : INFO   : DirectJDKLog.java:173 : Initializing ProtocolHandler ["http-nio-9098"]
+2024-10-31 10:15:02,094 :  : INFO   : DirectJDKLog.java:173 : Starting service [Tomcat]
+2024-10-31 10:15:02,094 :  : INFO   : DirectJDKLog.java:173 : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-31 10:15:02,213 :  : INFO   : DirectJDKLog.java:173 : Initializing Spring embedded WebApplicationContext
+2024-10-31 10:15:02,644 :  : INFO   : LogHelper.java:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-31 10:15:02,809 :  : INFO   : Version.java:44 : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-31 10:15:02,902 :  : INFO   : RegionFactoryInitiator.java:50 : HHH000026: Second-level cache disabled
+2024-10-31 10:15:03,683 :  : INFO   : HikariDataSource.java:109 : HikariPool-1 - Starting...
+2024-10-31 10:15:04,706 :  : INFO   : HikariPool.java:554 : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f63cf5
+2024-10-31 10:15:04,709 :  : INFO   : HikariDataSource.java:122 : HikariPool-1 - Start completed.
+2024-10-31 10:15:04,839 :  : WARN   : DialectFactoryImpl.java:153 : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-31 10:15:04,843 :  : WARN   : DialectFactoryImpl.java:101 : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-10-31 10:15:06,953 :  : INFO   : JtaPlatformInitiator.java:59 : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-31 10:15:09,762 :  : INFO   : DirectJDKLog.java:173 : Starting ProtocolHandler ["http-nio-9098"]
+2024-10-31 10:15:09,801 :  : INFO   : StartupInfoLogger.java:56 : Started CrudWithGraphQlApplication in 12.289 seconds (process running for 14.35)
+2024-10-31 10:15:09,806 :  : INFO   : CrudWithGraphQlApplication.java:21 : Spring Boot GraphQL Application Started...
+2024-10-31 10:15:21,569 :  : INFO   : DirectJDKLog.java:173 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-31 10:16:43,205 :  : INFO   : DirectJDKLog.java:173 : Stopping ProtocolHandler ["http-nio-9098"]
+2024-10-31 10:16:43,250 :  : INFO   : HikariDataSource.java:349 : HikariPool-1 - Shutdown initiated...
+2024-10-31 10:16:43,284 :  : INFO   : HikariDataSource.java:351 : HikariPool-1 - Shutdown completed.
+2024-10-31 10:16:43,503 :  : INFO   : StartupInfoLogger.java:50 : Starting CrudWithGraphQlApplication using Java 22.0.2 with PID 2872 (D:\SpringBoot\Spring Boot GraphQL\CrudWithGraphQL\target\classes started by admin in D:\SpringBoot\Spring Boot GraphQL\CrudWithGraphQL)
+2024-10-31 10:16:43,505 :  : INFO   : SpringApplication.java:654 : No active profile set, falling back to 1 default profile: "default"
+2024-10-31 10:16:44,365 :  : INFO   : DirectJDKLog.java:173 : Initializing ProtocolHandler ["http-nio-9098"]
+2024-10-31 10:16:44,366 :  : INFO   : DirectJDKLog.java:173 : Starting service [Tomcat]
+2024-10-31 10:16:44,367 :  : INFO   : DirectJDKLog.java:173 : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-31 10:16:44,429 :  : INFO   : DirectJDKLog.java:173 : Initializing Spring embedded WebApplicationContext
+2024-10-31 10:16:44,532 :  : INFO   : LogHelper.java:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-31 10:16:44,540 :  : INFO   : RegionFactoryInitiator.java:50 : HHH000026: Second-level cache disabled
+2024-10-31 10:16:44,590 :  : INFO   : HikariDataSource.java:109 : HikariPool-2 - Starting...
+2024-10-31 10:16:44,648 :  : INFO   : HikariPool.java:554 : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e97fb1c
+2024-10-31 10:16:44,649 :  : INFO   : HikariDataSource.java:122 : HikariPool-2 - Start completed.
+2024-10-31 10:16:44,650 :  : WARN   : DialectFactoryImpl.java:153 : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-31 10:16:44,651 :  : WARN   : DialectFactoryImpl.java:101 : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-10-31 10:16:44,874 :  : INFO   : JtaPlatformInitiator.java:59 : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-31 10:16:44,935 :  : INFO   : HikariDataSource.java:349 : HikariPool-2 - Shutdown initiated...
+2024-10-31 10:16:44,953 :  : INFO   : HikariDataSource.java:351 : HikariPool-2 - Shutdown completed.
+2024-10-31 10:16:44,955 :  : INFO   : DirectJDKLog.java:173 : Stopping service [Tomcat]
+2024-10-31 10:16:49,652 :  : INFO   : StartupInfoLogger.java:50 : Starting CrudWithGraphQlApplication using Java 22.0.2 with PID 2872 (D:\SpringBoot\Spring Boot GraphQL\CrudWithGraphQL\target\classes started by admin in D:\SpringBoot\Spring Boot GraphQL\CrudWithGraphQL)
+2024-10-31 10:16:49,654 :  : INFO   : SpringApplication.java:654 : No active profile set, falling back to 1 default profile: "default"
+2024-10-31 10:16:50,990 :  : INFO   : DirectJDKLog.java:173 : Initializing ProtocolHandler ["http-nio-9098"]
+2024-10-31 10:16:50,991 :  : INFO   : DirectJDKLog.java:173 : Starting service [Tomcat]
+2024-10-31 10:16:50,992 :  : INFO   : DirectJDKLog.java:173 : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-31 10:16:51,040 :  : INFO   : DirectJDKLog.java:173 : Initializing Spring embedded WebApplicationContext
+2024-10-31 10:16:51,111 :  : INFO   : LogHelper.java:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-31 10:16:51,114 :  : INFO   : RegionFactoryInitiator.java:50 : HHH000026: Second-level cache disabled
+2024-10-31 10:16:51,128 :  : INFO   : HikariDataSource.java:109 : HikariPool-3 - Starting...
+2024-10-31 10:16:51,151 :  : INFO   : HikariPool.java:554 : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2dc0ce7b
+2024-10-31 10:16:51,152 :  : INFO   : HikariDataSource.java:122 : HikariPool-3 - Start completed.
+2024-10-31 10:16:51,153 :  : WARN   : DialectFactoryImpl.java:153 : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-31 10:16:51,153 :  : WARN   : DialectFactoryImpl.java:101 : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-10-31 10:16:51,302 :  : INFO   : JtaPlatformInitiator.java:59 : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-31 10:16:51,956 :  : INFO   : DirectJDKLog.java:173 : Starting ProtocolHandler ["http-nio-9098"]
+2024-10-31 10:16:51,972 :  : INFO   : StartupInfoLogger.java:56 : Started CrudWithGraphQlApplication in 2.43 seconds (process running for 116.52)
+2024-10-31 10:16:51,976 :  : INFO   : CrudWithGraphQlApplication.java:21 : Spring Boot GraphQL Application Started...
+2024-10-31 10:18:11,257 :  : INFO   : DirectJDKLog.java:173 : Stopping ProtocolHandler ["http-nio-9098"]
+2024-10-31 10:18:11,269 :  : INFO   : HikariDataSource.java:349 : HikariPool-3 - Shutdown initiated...
+2024-10-31 10:18:11,278 :  : INFO   : HikariDataSource.java:351 : HikariPool-3 - Shutdown completed.
+2024-10-31 10:18:11,433 :  : INFO   : StartupInfoLogger.java:50 : Starting CrudWithGraphQlApplication using Java 22.0.2 with PID 2872 (D:\SpringBoot\Spring Boot GraphQL\CrudWithGraphQL\target\classes started by admin in D:\SpringBoot\Spring Boot GraphQL\CrudWithGraphQL)
+2024-10-31 10:18:11,434 :  : INFO   : SpringApplication.java:654 : No active profile set, falling back to 1 default profile: "default"
+2024-10-31 10:18:11,998 :  : INFO   : DirectJDKLog.java:173 : Initializing ProtocolHandler ["http-nio-9098"]
+2024-10-31 10:18:12,000 :  : INFO   : DirectJDKLog.java:173 : Starting service [Tomcat]
+2024-10-31 10:18:12,000 :  : INFO   : DirectJDKLog.java:173 : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-31 10:18:12,044 :  : INFO   : DirectJDKLog.java:173 : Initializing Spring embedded WebApplicationContext
+2024-10-31 10:18:12,132 :  : INFO   : LogHelper.java:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-31 10:18:12,144 :  : INFO   : RegionFactoryInitiator.java:50 : HHH000026: Second-level cache disabled
+2024-10-31 10:18:12,172 :  : INFO   : HikariDataSource.java:109 : HikariPool-4 - Starting...
+2024-10-31 10:18:12,205 :  : INFO   : HikariPool.java:554 : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73c14cbb
+2024-10-31 10:18:12,205 :  : INFO   : HikariDataSource.java:122 : HikariPool-4 - Start completed.
+2024-10-31 10:18:12,207 :  : WARN   : DialectFactoryImpl.java:153 : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-31 10:18:12,207 :  : WARN   : DialectFactoryImpl.java:101 : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-10-31 10:18:12,413 :  : INFO   : JtaPlatformInitiator.java:59 : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-31 10:18:12,500 :  : INFO   : HikariDataSource.java:349 : HikariPool-4 - Shutdown initiated...
+2024-10-31 10:18:12,506 :  : INFO   : HikariDataSource.java:351 : HikariPool-4 - Shutdown completed.
+2024-10-31 10:18:12,506 :  : INFO   : DirectJDKLog.java:173 : Stopping service [Tomcat]
+2024-10-31 10:21:09,029 :  : INFO   : StartupInfoLogger.java:50 : Starting CrudWithGraphQlApplication using Java 22.0.2 with PID 2872 (D:\SpringBoot\Spring Boot GraphQL\CrudWithGraphQL\target\classes started by admin in D:\SpringBoot\Spring Boot GraphQL\CrudWithGraphQL)
+2024-10-31 10:21:09,031 :  : INFO   : SpringApplication.java:654 : No active profile set, falling back to 1 default profile: "default"
+2024-10-31 10:21:09,570 :  : INFO   : DirectJDKLog.java:173 : Initializing ProtocolHandler ["http-nio-9098"]
+2024-10-31 10:21:09,571 :  : INFO   : DirectJDKLog.java:173 : Starting service [Tomcat]
+2024-10-31 10:21:09,571 :  : INFO   : DirectJDKLog.java:173 : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-31 10:21:09,605 :  : INFO   : DirectJDKLog.java:173 : Initializing Spring embedded WebApplicationContext
+2024-10-31 10:21:09,681 :  : INFO   : LogHelper.java:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-31 10:21:09,685 :  : INFO   : RegionFactoryInitiator.java:50 : HHH000026: Second-level cache disabled
+2024-10-31 10:21:09,701 :  : INFO   : HikariDataSource.java:109 : HikariPool-5 - Starting...
+2024-10-31 10:21:09,746 :  : INFO   : HikariPool.java:554 : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@143c3261
+2024-10-31 10:21:09,747 :  : INFO   : HikariDataSource.java:122 : HikariPool-5 - Start completed.
+2024-10-31 10:21:09,748 :  : WARN   : DialectFactoryImpl.java:153 : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-31 10:21:09,749 :  : WARN   : DialectFactoryImpl.java:101 : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-10-31 10:21:09,875 :  : INFO   : JtaPlatformInitiator.java:59 : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-31 10:21:10,624 :  : INFO   : DirectJDKLog.java:173 : Starting ProtocolHandler ["http-nio-9098"]
+2024-10-31 10:21:10,655 :  : INFO   : StartupInfoLogger.java:56 : Started CrudWithGraphQlApplication in 1.707 seconds (process running for 375.203)
+2024-10-31 10:21:10,663 :  : INFO   : CrudWithGraphQlApplication.java:21 : Spring Boot GraphQL Application Started...
+2024-10-31 10:21:11,408 :  : INFO   : DirectJDKLog.java:173 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-31 10:23:54,404 :  : INFO   : DirectJDKLog.java:173 : Stopping ProtocolHandler ["http-nio-9098"]
+2024-10-31 10:23:54,416 :  : INFO   : HikariDataSource.java:349 : HikariPool-5 - Shutdown initiated...
+2024-10-31 10:23:54,427 :  : INFO   : HikariDataSource.java:351 : HikariPool-5 - Shutdown completed.
+2024-10-31 10:23:54,657 :  : INFO   : StartupInfoLogger.java:50 : Starting CrudWithGraphQlApplication using Java 22.0.2 with PID 2872 (D:\SpringBoot\Spring Boot GraphQL\CrudWithGraphQL\target\classes started by admin in D:\SpringBoot\Spring Boot GraphQL\CrudWithGraphQL)
+2024-10-31 10:23:54,657 :  : INFO   : SpringApplication.java:654 : No active profile set, falling back to 1 default profile: "default"
+2024-10-31 10:23:55,240 :  : INFO   : DirectJDKLog.java:173 : Initializing ProtocolHandler ["http-nio-9098"]
+2024-10-31 10:23:55,240 :  : INFO   : DirectJDKLog.java:173 : Starting service [Tomcat]
+2024-10-31 10:23:55,240 :  : INFO   : DirectJDKLog.java:173 : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-31 10:23:55,281 :  : INFO   : DirectJDKLog.java:173 : Initializing Spring embedded WebApplicationContext
+2024-10-31 10:23:55,361 :  : INFO   : LogHelper.java:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-31 10:23:55,361 :  : INFO   : RegionFactoryInitiator.java:50 : HHH000026: Second-level cache disabled
+2024-10-31 10:23:55,390 :  : INFO   : HikariDataSource.java:109 : HikariPool-6 - Starting...
+2024-10-31 10:23:55,408 :  : INFO   : HikariPool.java:554 : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77f7c04d
+2024-10-31 10:23:55,408 :  : INFO   : HikariDataSource.java:122 : HikariPool-6 - Start completed.
+2024-10-31 10:23:55,408 :  : WARN   : DialectFactoryImpl.java:153 : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-31 10:23:55,408 :  : WARN   : DialectFactoryImpl.java:101 : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-10-31 10:23:55,583 :  : INFO   : JtaPlatformInitiator.java:59 : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-31 10:23:56,205 :  : INFO   : DirectJDKLog.java:173 : Starting ProtocolHandler ["http-nio-9098"]
+2024-10-31 10:23:56,225 :  : INFO   : StartupInfoLogger.java:56 : Started CrudWithGraphQlApplication in 1.7 seconds (process running for 540.773)
+2024-10-31 10:23:56,226 :  : INFO   : CrudWithGraphQlApplication.java:21 : Spring Boot GraphQL Application Started...
+2024-10-31 10:35:47,172 :  : INFO   : DirectJDKLog.java:173 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-31 10:43:55,936 :  : INFO   : ProductController.java:46 : Update product quantity from db : Product(id=3, productName=TV, price=120000.0, productQuantity=345)
+2024-10-31 10:44:12,908 :  : INFO   : ProductController.java:46 : Update product quantity from db : Product(id=3, productName=TV, price=120000.0, productQuantity=0)
+2024-10-31 10:45:51,100 :  : INFO   : ProductController.java:46 : Update product quantity from db : Product(id=2, productName=Mobile, price=12000.0, productQuantity=0)
+2024-10-31 10:52:34,566 :  : INFO   : HikariDataSource.java:349 : HikariPool-6 - Shutdown initiated...
+2024-10-31 10:52:34,617 :  : INFO   : HikariDataSource.java:351 : HikariPool-6 - Shutdown completed.
+2024-10-31 17:13:45,372 :  : INFO   : StartupInfoLogger.java:50 : Starting CrudWithGraphQlApplication using Java 22.0.2 with PID 13196 (D:\SpringBoot\Spring Boot GraphQL\CrudWithGraphQL\target\classes started by admin in D:\SpringBoot\Spring Boot GraphQL\CrudWithGraphQL)
+2024-10-31 17:13:45,380 :  : INFO   : SpringApplication.java:654 : No active profile set, falling back to 1 default profile: "default"
+2024-10-31 17:13:46,870 :  : INFO   : DirectJDKLog.java:173 : Initializing ProtocolHandler ["http-nio-9098"]
+2024-10-31 17:13:46,885 :  : INFO   : DirectJDKLog.java:173 : Starting service [Tomcat]
+2024-10-31 17:13:46,885 :  : INFO   : DirectJDKLog.java:173 : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-31 17:13:46,932 :  : INFO   : DirectJDKLog.java:173 : Initializing Spring embedded WebApplicationContext
+2024-10-31 17:13:47,105 :  : INFO   : LogHelper.java:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-31 17:13:47,168 :  : INFO   : Version.java:44 : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-31 17:13:47,201 :  : INFO   : RegionFactoryInitiator.java:50 : HHH000026: Second-level cache disabled
+2024-10-31 17:13:47,545 :  : INFO   : HikariDataSource.java:109 : HikariPool-1 - Starting...
+2024-10-31 17:13:48,031 :  : INFO   : HikariPool.java:554 : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52ae927c
+2024-10-31 17:13:48,031 :  : INFO   : HikariDataSource.java:122 : HikariPool-1 - Start completed.
+2024-10-31 17:13:48,125 :  : WARN   : DialectFactoryImpl.java:153 : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-31 17:13:48,125 :  : WARN   : DialectFactoryImpl.java:101 : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-10-31 17:13:49,067 :  : INFO   : JtaPlatformInitiator.java:59 : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-31 17:13:50,407 :  : INFO   : DirectJDKLog.java:173 : Starting ProtocolHandler ["http-nio-9098"]
+2024-10-31 17:13:50,432 :  : INFO   : StartupInfoLogger.java:56 : Started CrudWithGraphQlApplication in 5.434 seconds (process running for 7.24)
+2024-10-31 17:13:50,432 :  : INFO   : CrudWithGraphQlApplication.java:21 : Spring Boot GraphQL Application Started...
+2024-10-31 17:14:34,770 :  : INFO   : DirectJDKLog.java:173 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-31 17:15:45,457 :  : INFO   : ProductController.java:61 : Delete product from db : delete product successfully
+2024-10-31 17:18:17,873 :  : INFO   : HikariDataSource.java:349 : HikariPool-1 - Shutdown initiated...
+2024-10-31 17:18:17,873 :  : INFO   : HikariDataSource.java:351 : HikariPool-1 - Shutdown completed.

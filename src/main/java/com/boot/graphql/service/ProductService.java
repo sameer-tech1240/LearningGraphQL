@@ -57,6 +57,15 @@ public class ProductService implements IProductService {
         return productRepository.save(product);
     }
 
+    @Override
+    public String deleteProduct(int id) {
+        Product product = productRepository.findById(id).orElseThrow(() -> new RuntimeException("Product not found with id : " + id));
+        if (product != null) {
+            productRepository.deleteById(id);
+        }
+        return "delete product successfully";
+    }
+
 
 
     /*@Override
